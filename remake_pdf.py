@@ -149,10 +149,31 @@ def remake_pdf(page_layouts, output_path):
             y1 = element['y1']
             width = element['width']
             height = element['height']
-            #text = element['text']
-            text = translate(element['text'])
-            text = text.replace("「","")
-            text = text.replace("」","") 
+
+            text = element['text']
+
+            replace_strs = [b'\x00']
+
+            # byte文字列に変換
+            line_utf8 = text.encode('utf-8')
+            #print(text.encode(encoding="utf-8", errors="strict"))
+            #print(line_utf8)
+            #print(line_utf8.isascii())
+
+            # ASCIIで以外が含まれているものを除外
+            if line_utf8.isascii() == False:
+                continue
+
+            # 余分な文字を除去する
+            for replace_str in replace_strs:
+                line_utf8 = line_utf8.replace(replace_str, b'')
+
+            # strに戻す
+            text = line_utf8.decode()
+
+            text = translate(text)
+            text = text.removeprefix("「")
+            text = text.removesuffix("」")
             
             frame = Frame(x0, y0, width, height, 
                         showBoundary=show, 
