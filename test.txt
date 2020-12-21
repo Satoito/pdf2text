@@ -1,0 +1,23 @@
+Title comes here
+
+Description comes here. 
+
+This is a test pdf. The next 
+line is a test for functions. 
+
+𝑛
+𝑥 + 𝑎 𝑛 = ෍
+𝑘=0
+
+𝑛
+𝑘
+
+𝑥𝑘𝑎𝑛−𝑘
+
+The minimum point of 
+𝑓(𝑥) is in the direction given 
+by −∇𝑓(𝑥). 
+
+Fig. 1 Example of image
+
+

@@ -1,0 +1,9 @@
+Title comes hereDescription comes here.
+
+ This is a test pdf.
+
+ The next line is a test for functions.
+
+ 𝑛𝑥 + 𝑎 𝑛 = 𝑘=0𝑛𝑘𝑥𝑘𝑎𝑛−𝑘The minimum point of 𝑓(𝑥) is in the direction given by −∇𝑓(𝑥).
+
+ Fig 1 Example of image
