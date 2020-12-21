@@ -139,7 +139,7 @@ def remake_pdf(page_layouts, output_path):
             text = translate(element['text'])
             text = text.replace("「","")
             text = text.replace("」","")
-            print(text)
+            #print(text)
             para = Paragraph(text, style)
             flowables.append(para)
             flowables.append(FrameBreak())
