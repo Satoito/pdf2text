@@ -88,7 +88,6 @@ def main():
     get_text()
     convert_text()
 
-
     with open(output_translate_path, 'w', encoding="utf-8") as f_translate:
         with open(output_convert_path, 'r',encoding="utf-8") as f:
             for line in f:
